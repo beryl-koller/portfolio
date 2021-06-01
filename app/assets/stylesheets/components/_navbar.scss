@@ -1,12 +1,32 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+p {
+  margin: 0;
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar-beryl {
+  justify-content: space-between;
+  background: $dark;
+  padding: 10px;
+}
+
+.navbar-beryl .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
+.navbar-beryl .navbar-brand {
   width: 40px;
+}
+
+.navbar-brand p {
+  margin: 0;
+  color: $accent;
+  font-weight: bold;
+}
+
+.fas {
+  color: $light;
+  size: 28px;
+}
+
+.navbar-toggler {
+  border: none;
 }
