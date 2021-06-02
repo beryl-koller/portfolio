@@ -93,11 +93,28 @@
 // ABOUT ME
 
 .about-me-content {
-    margin: 40px 0;
+    margin-top: 40px;
 }
 
 @media (min-width: 100px) and (max-width: 768px) {
     .about-me-text {
         margin-top: 20px;
     }
+}
+
+.about-me-img {
+    filter: saturate(0%);
+}
+
+// CONTACT
+
+.contact {
+    background-image: url(https://res.cloudinary.com/df0stqosw/image/upload/v1622530415/Portfolio/Banner/dynamic-wang-8PppxyQr7QI-unsplash_dwvexh.jpg);
+    background-size: 120%;
+    background-position: 0% 100%;
+}
+
+.contact-details {
+    margin-top: 40px;
+    text-align: center;
 }
