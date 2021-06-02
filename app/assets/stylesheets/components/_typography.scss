@@ -1,0 +1,17 @@
+.light-text {
+    color: white;
+}
+
+.dark-text {
+    color: $dark
+}
+
+.section-title {
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.portfolio > .section-title {
+    padding-top: 40px;
+}

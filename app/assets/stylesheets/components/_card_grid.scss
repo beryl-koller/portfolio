@@ -1,0 +1,37 @@
+.portfolio-grid {
+    display: flex;
+}
+
+.project-cards {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+    // height: 250px;
+}
+
+/*Media Queries*/
+
+/*Smallest device*/
+@media (min-width: 100px) and (max-width: 575px) {
+    .project-cards {
+        grid-template-columns: 1fr;
+        padding: 16px;
+    }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    .project-cards {
+        grid-template-columns: 1fr 1fr;
+        padding: 16px 64px;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 1200px) {
+    .project-cards {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 16px 128px;
+    }
+}
