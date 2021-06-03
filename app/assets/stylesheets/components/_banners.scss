@@ -6,7 +6,10 @@
     background-position: 0% 58%;
     height: 80vh;
     text-align: center;
-    padding: 150px 0;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: center;
 }
 
 .banner-surtitle {
