@@ -10,12 +10,14 @@
 
 .modal-links {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
+
 
 .modal-links a {
     text-decoration: none;
-    margin-bottom: 16px;
+    margin: 0 8px 16px 8px;
+    text-align: center;
 }
 
 .modal-details {
@@ -31,6 +33,20 @@
     flex-wrap: wrap;
 }
 
+/*Smallest device*/
+@media (min-width: 100px) and (max-width: 768px) {
+    .modal-skills {
+        flex-direction: row;
+    }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 769px) {
+    .modal-skills {
+        flex-direction: column;
+    }
+}
+
 .modal-skill {
     color: $dark;
 }
@@ -38,6 +54,20 @@
 .modal-icon {
     color: $dark;
     margin-left: 12px;
+}
+
+.modal-icon.fas {
+    color: $dark;
+    margin-left: 12px;
+}
+
+.modal-icon.fab {
+    color: $dark;
+    margin-left: 12px;
+}
+
+.modal-desc {
+    margin-bottom: 16px;
 }
 
 .carousel-control-prev-icon {

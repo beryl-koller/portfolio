@@ -10,6 +10,18 @@
     
 }
 
+.samba {
+    background-image: url('https://res.cloudinary.com/df0stqosw/image/upload/v1623072653/Portfolio/Projects/Samba/samba-1_fm93ou.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.samba:hover {
+    background-image: linear-gradient(rgba(31, 40, 51, 0.8), rgba(31, 40, 51, 0.8)),
+        url('https://res.cloudinary.com/df0stqosw/image/upload/v1623072653/Portfolio/Projects/Samba/samba-1_fm93ou.png');
+
+}
+
 .project-card {
     display: flex;
     align-items: center;
