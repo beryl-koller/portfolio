@@ -22,6 +22,18 @@
 
 }
 
+.creations-bois {
+    background-image: url('https://res.cloudinary.com/df0stqosw/image/upload/v1623184906/Portfolio/Projects/Cr%C3%A9ations%20Bois/creations-bois-8_kj9psk.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.creations-bois:hover {
+    background-image: linear-gradient(rgba(31, 40, 51, 0.8), rgba(31, 40, 51, 0.8)),
+        url('https://res.cloudinary.com/df0stqosw/image/upload/v1623184906/Portfolio/Projects/Cr%C3%A9ations%20Bois/creations-bois-8_kj9psk.png');
+
+}
+
 .project-card {
     display: flex;
     align-items: center;
