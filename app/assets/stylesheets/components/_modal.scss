@@ -1,11 +1,18 @@
 .modal-content {
     padding: 15px;
+    position: relative;
 }
 
 .modal-title {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
 }
 
 .modal-links {
