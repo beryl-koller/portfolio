@@ -101,6 +101,10 @@
     margin-top: 40px;
 }
 
+.about-me-text {
+    font-size: 15px;
+}
+
 @media (min-width: 100px) and (max-width: 768px) {
     .about-me-text {
         margin-top: 20px;
@@ -124,9 +128,12 @@
     text-align: center;
 }
 
-// .modal-content {
-//     opacity: 1;
-// }
-// .modal {
-//     opacity: 1;
-// }
+.contact-details > a {
+    text-decoration: none;
+}
+
+.contact-icon {
+    color: white;
+    font-size: 20px;
+    padding: 0px 4px;
+}
