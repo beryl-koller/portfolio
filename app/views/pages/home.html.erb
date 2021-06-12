@@ -183,12 +183,20 @@
 
 <div class="contact subbanner light-text" id="contact">
     <h2 class="section-title">Contact</h2>
-    <div class="contact-details">
-        <p>beryl.koller@gmail.com</p>
-        <p>+33 6 72 47 51 42</p>
-        <p>Marseille region, France</p>
-        <a href="https://www.linkedin.com/in/berylkoller/" target="blank"><i class="contact-icon devicon-linkedin-plain"></i></a>
-        <a href="https://github.com/beryl-koller" target="blank"><i class="contact-icon devicon-github-original"></i></a>
+    <div class="contact-section row">
+        <div class="contact-details col-sm-12 col-md-3">
+            <p>beryl.koller@gmail.com</p>
+            <p>+33 6 72 47 51 42</p>
+            <p>Marseille region, France</p>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/berylkoller/" target="blank"><i class="contact-icon devicon-linkedin-plain"></i></a>
+                <a href="https://github.com/beryl-koller" target="blank"><i class="contact-icon devicon-github-original"></i></a>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-9">
+            <%= render 'contacts/new' %>
+        </div>
+    </div>
        
     </div>
 </div>

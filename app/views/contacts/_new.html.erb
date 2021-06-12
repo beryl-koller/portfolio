@@ -1,0 +1,23 @@
+<div class="contact-form">
+  <%= form_for @contact do |f| %>
+    <% if flash[:error].present? %>
+      <p> flash[:error]</p>
+    <% end %>
+    <div class="form-field">
+      <%= f.label :name, 'Nom:'%> <br>
+      <%= f.text_field :name, required: true %>
+    </div>
+    <div class="form-field">
+      <%= f.label :email, 'Email:' %> <br>
+      <%= f.text_field :email, required: true %>
+    </div>
+    <div class="form-field">
+      <%= f.label :message, 'Message:' %> <br>
+      <%= f.text_area :message, as: :text %>
+    </div>
+    <div class="text-right">
+      <%= f.submit 'Envoyer', class: "button-accent" %>
+    </div>
+  <% end %>
+</div>
+
