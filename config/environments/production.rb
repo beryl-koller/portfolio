@@ -23,6 +23,21 @@ Rails.application.configure do
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
+  config.action_mailer_default_url_options = { host: 'beryl-dev.herokuapp.com' }
+  Rails.application.routes.default_url_options[:host] = 'beryl-dev.herokuapp.com'
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.default charset: 'utf-8'
+  config.action_mailer.smtp_settings = {
+    address: 'smtp.gmail.com',
+    port: 587,
+    domain: 'gmail.com',
+    authentication: 'plain',
+    enable_starttls_auto: true,
+    user_name: ENV['GMAIL_USERNAME'],
+    password: ENV['GMAIL_PASSWORD']
+  }
 
   # Compress CSS using a preprocessor.
   # config.assets.css_compressor = :sass

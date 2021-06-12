@@ -124,6 +124,10 @@
     background-position: 0% 100%;
 }
 
+.contact-section {
+    margin-top: 40px;
+}
+
 .contact-details {
     margin-top: 40px;
     text-align: center;
@@ -133,8 +137,52 @@
     text-decoration: none;
 }
 
+.contact-links {
+    margin-top: 10px;
+}
+
 .contact-icon {
     color: white;
     font-size: 20px;
     padding: 0px 4px;
+}
+
+.form-field {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+#contact_name {
+    width: 75%
+}
+
+#contact_email {
+    width: 75%
+}
+
+#contact_message {
+    width: 75%;
+    height: 150px;
+}
+
+@media (min-width: 100px) and (max-width: 768px) {
+    .contact-details {
+        margin-top: 30px;
+    }
+    .contact-section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (min-width: 769px) {
+    .contact-section {
+        display: flex;
+        flex-direction: row;
+    }
+    .contact-details {
+        margin: 0;
+        text-align: left;
+    }
 }
